@@ -1,0 +1,1651 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 50px;
+    background-color: black;
+    border-bottom: 3px solid #FFCA02;
+}
+
+.logo img {
+    height: 80px;
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 60px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #FFCA02;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.linkedin-logo {
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.linkedin-logo .linkedin-icon {
+    fill: #FFF; /* Default white color */
+    transition: fill 0.3s ease;
+}
+
+.linkedin-logo:hover .linkedin-icon,
+.linkedin-logo:focus .linkedin-icon {
+    fill: #FFCA02; 
+}
+
+.linkedin-logo:hover {
+    transform: scale(1.3); 
+}
+.resume-button {
+    padding: 8px 15px;
+    border: 2px solid #FFCA02;
+    background-color: transparent;
+    color: #FFCA02;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.resume-button:hover {
+    background-color: #FFCA02;
+    color: #fff;
+}
+
+
+
+/* Text Styling */
+.text {
+    flex: 1; 
+    max-width: 600px; 
+}
+
+.text h1 {
+    font-size: 4rem; 
+    font-weight: 400;
+    margin-bottom: 20px; 
+    line-height: 1.2;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+.text p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Image Section */
+.image {
+    flex: 1; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    width: 100%; 
+    height: auto; 
+    max-width: 800px; 
+}
+
+/* Project Intro Section */
+
+
+
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+}
+
+.avatar {
+    max-width: 300px;
+    transform: rotate(0deg) translateY(250px);
+    transition: transform 0.3s ease; 
+    margin-bottom: 180px;
+    margin-top: 0px;
+}
+
+.intro-text {
+    font-size: 1.5rem;
+    color: #a83b64;
+    background-color: #FFCA02;
+    border: 2px dashed #d18a9c;
+    padding: 30px 20px;
+    border-radius: 10px;
+    max-width: 600px; /* Set a max-width to prevent it from stretching too wide */
+}
+
+/* Turners Intro Section */
+
+.buying-experience {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px; 
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 60px;
+    border-radius: 20px; 
+    background: linear-gradient(135deg, #99cce6, #d9d9d9);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); 
+}
+
+/* Image Container */
+.image-container {
+    flex: 2;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+   
+}
+
+/* Text Container */
+.text-container {
+    flex: 1;
+    max-width: 500px;
+    padding: 80px 20px; 
+} 
+
+.text-container h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #004494; 
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.text-container h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #0056b3;
+}
+
+.text-container p {
+    font-size: 1.2rem;
+    line-height: 1.5; 
+    margin-bottom: 30px;
+    color: #444; 
+    text-align: justify; 
+}
+
+/* Case Study Link */
+.case-study-link {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #0056b3;
+    padding: 12px 25px; 
+    border-radius: 30px; 
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); 
+    transition: all 0.3s ease;
+}
+
+.case-study-link:hover {
+    background-color: #003d80; 
+    transform: translateY(-3px); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+}
+
+/* Z Energy Buying Experience Section */
+.buying-experience.z-energy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 60px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #FFE066, #FFD54F); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Z Energy Text Container */
+.buying-experience.z-energy .text-container h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ff8c00; 
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.buying-experience.z-energy .text-container h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #ff9d00; /* Bright yellow-orange */
+}
+
+.buying-experience.z-energy .text-container p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: #7A4E00; 
+    text-align: justify;
+}
+
+/* Z Energy Case Study Link */
+.buying-experience.z-energy .case-study-link {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #FF8C00; 
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.buying-experience.z-energy .case-study-link:hover {
+    background-color: #cc6f00;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* About Me */
+
+.about-me {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.intro {
+  text-align: center;
+  max-width: 900px;
+  margin: 20px auto;
+  font-size: 1.2rem; 
+  color: #555;
+}
+
+/* Expertise Section */
+.about-me {
+    background-color: #f9f9f9; 
+    padding: 60px 60px; 
+    text-align: center; 
+}
+
+.content-wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-me h1 {
+    font-size: 3rem; 
+    font-weight: bold; 
+    color: #222;
+    margin-bottom: 40px; 
+    text-transform: uppercase;
+}
+
+
+.intro {
+    font-size: 1.4rem; 
+    line-height: 2; 
+    color: #444;
+    margin-bottom: 60px; 
+}
+
+.expertise {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 50px; 
+    margin-top: 60px; 
+}
+
+.expertise-item {
+    text-align: center;
+    max-width: 320px;
+    margin: auto; 
+}
+
+.expertise-item .icon {
+    width: 140px; 
+    height: auto;
+    margin-bottom: 20px; 
+}
+
+.expertise-item h3 {
+    margin: 20px 0;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.expertise-item p {
+    font-size: 1.1rem; 
+    color: #555;
+    line-height: 1.8; 
+}
+
+.tools {
+    display: flex; 
+    flex-wrap: nowrap; 
+    gap: 20px; 
+    overflow-x: auto; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 10px 0; 
+}
+
+.tools img {
+    width: 100px; 
+    height: auto; 
+    display: block; 
+}
+
+.tools-heading {
+    font-size: 2.5rem;
+    font-weight: bold; 
+    color: #222; 
+    margin-top: 150px; 
+    margin-bottom: 30px; 
+    text-align: center; 
+}
+
+/* Footer */
+.footer {
+    background-color: #000; /* Black background */
+    color: #FFD700; /* Theme yellow text color */
+    padding: 20px 10px; /* Spacing inside the footer */
+    text-align: center; /* Center-align the content */
+    border-top: 3px solid #FFD700; /* 3px yellow top border */
+    border-bottom: 3px solid #FFD700; /* 3px yellow top border */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo {
+    width: 400px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.footer-container p {
+    margin: 0;
+    font-size: 0.9rem; /* Smaller text for the copyright */
+}
+
+/* Mobile */
+
+/* Mobile-specific styles for screens 768px and below */
+@media only screen and (max-width: 768px) {
+    /* Header */
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 20px;
+    }
+
+    /* Logo */
+    .logo img {
+        height: 50px; /* Adjusted size for smaller screens */
+        margin-bottom: 10px; /* Adds space between the logo and nav links */
+    }
+
+    /* Navigation Links */
+    .nav-links {
+        flex-direction: column; /* Stack links vertically */
+        gap: 15px; /* Reduced gap between links */
+        width: 100%; /* Stretch to full width */
+        text-align: center; /* Center-align links */
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        font-size: 16px; /* Smaller font size for mobile */
+    }
+
+    /* Header Right Section */
+    .header-right {
+        flex-direction: row; /* Keep items in a row */
+        gap: 15px; /* Reduced gap between icons and buttons */
+        justify-content: center; /* Center-align the content */
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    /* LinkedIn Icon */
+    .linkedin-logo {
+        transform: scale(1); /* Reset hover effect scaling for consistency */
+    }
+
+    /* Resume Button */
+    .resume-button {
+        padding: 10px 15px; /* Slightly smaller button */
+        font-size: 14px; /* Adjusted font size */
+        width: auto; /* Ensure the button adjusts to its content */
+    }
+
+    /* Intro Section */
+    .intro-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text h1 {
+        font-size: 2rem; /* Reduce the font size */
+        line-height: 1.2; /* Ensure proper spacing */
+        white-space: normal; /* Allow wrapping of text */
+        overflow: visible; /* Ensure text is fully displayed */
+        text-overflow: unset; /* Remove any text truncation */
+    }
+
+    .text {
+        padding: 0 15px; /* Add padding for better mobile spacing */
+    }
+
+    .avatar {
+        max-width: 200px;
+        transform: rotate(0deg) translateY(0);
+        margin-bottom: 20px;
+    }
+
+    .intro-text {
+        padding: 20px 15px;
+        font-size: 1rem;
+    }
+
+    /* Buying Experience */
+    .buying-experience, .buying-experience.z-energy {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    .text-container {
+        padding: 0;
+        text-align: center;
+    }
+
+    .text-container h1,
+    .text-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .text-container p {
+        font-size: 1rem;
+    }
+
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Expertise Section */
+    .expertise {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .expertise-item {
+        max-width: 100%;
+    }
+
+    /* Tools */
+    .tools {
+        gap: 10px;
+        padding: 5px 0;
+    }
+
+    .tools img {
+        width: 60px;
+    }
+
+    .tools-heading {
+        font-size: 1.8rem;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    /* Footer */
+    .footer-container {
+        gap: 5px;
+    }
+
+    .footer-logo {
+        width: 300px;
+    }
+
+    .footer-container p {
+        font-size: 0.8rem;
+    }
+}
+
+                                                                                                    /* ABOUT ME PAGE */
+
+   /* Profile Section */
+   .profile-section {
+    display: flex; /* Aligns image and text side by side */
+    align-items: center; /* Centers content vertically */
+    justify-content: space-between; /* Creates space between image and text */
+    max-width: 1200px; /* Restricts the section width */
+    margin: 50px auto; /* Centers the section and adds spacing */
+    gap: 60px; /* Adds space between the image and text */
+    padding: 20px; /* Adds padding around the section */
+}
+
+/* Profile Image Styling */
+.profile-image-container {
+    flex: 1; /* Makes the container take up 1 part of the available space */
+    text-align: center; /* Centers the image within its container */
+}
+
+.profile-image {
+    max-width: 350px; /* Restricts the image size */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 30%; /* Makes the image circular */
+    transition: transform 0.3s ease;
+}
+
+/* Profile Description Styling */
+.profile-description {
+    flex: 2; /* Makes the text container take up 2 parts of the available space */
+    font-size: 1.5rem; /* Adjusts font size */
+    color: #a83b64; /* Sets text color */
+    background-color: #ffca02; /* Sets background color */
+    border: 2px dashed #d18a9c; /* Adds a dashed border */
+    padding: 40px 20px; /* Adds padding inside the text container */
+    border-radius: 10px; /* Rounds the corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    line-height: 1.8; /* Improves readability */
+    max-width: 800px; /* Restricts the text container width */
+}
+@media only screen and (max-width: 768px) {
+/* Stack the image and description vertically */
+.profile-section {
+flex-direction: column; /* Stacks image and text vertically */
+align-items: center; /* Centers content */
+gap: 20px; /* Adds space between stacked elements */
+padding: 15px; /* Adjusts padding for smaller screens */
+}
+
+/* Center the profile description */
+.profile-description {
+max-width: 100%; /* Allows description to take full width */
+text-align: center; /* Centers the text */
+font-size: 1.2rem; /* Slightly smaller font size for readability */
+padding: 20px; /* Maintains some padding */
+background-color: #ffca02; /* Keeps background color */
+border: 2px dashed #d18a9c; /* Keeps border styling */
+border-radius: 10px; /* Rounds the corners */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Keeps the shadow */
+}
+
+/* Adjust the profile image size */
+.profile-image {
+max-width: 200px; /* Reduces image size for smaller screens */
+height: auto; /* Maintains aspect ratio */
+border-radius: 50%; /* Ensures circular style remains */
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Keeps the shadow */
+}
+
+/* Adjust the profile image container */
+.profile-image-container {
+text-align: center; /* Centers the image */
+margin-bottom: 15px; /* Adds space below the image */
+}
+}
+/* Work Experience Section About Page */
+.work-experience {
+max-width: 1200px;
+margin: 50px auto; /* Center section and add space from top */
+padding: 20px;
+background-color: white;
+border-radius: 10px; /* Rounded corners */
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Section Title */
+.section-title {
+font-size: 2.5rem;
+color: #ff9900; /* Bright orange */
+text-align: center;
+margin-bottom: 30px;
+font-weight: bold;
+}
+
+/* Job Title */
+.job-title {
+font-size: 1.8rem;
+color: #333; /* Darker text for job titles */
+margin-bottom: 10px;
+}
+
+/* Company Description */
+.company-description {
+font-size: 1rem;
+color: #555; /* Slightly muted text */
+margin-bottom: 20px;
+line-height: 1.8; /* Improve readability */
+}
+
+/* Key Activities */
+.key-activities-title {
+font-size: 1.2rem;
+color: #ff9900; /* Highlighted subtitle */
+margin-bottom: 10px;
+font-weight: bold;
+}
+
+.key-activities {
+list-style-type: disc;
+padding-left: 20px; /* Indent list items */
+margin-bottom: 30px; /* Add space after each job */
+}
+
+.key-activities li {
+font-size: 1rem;
+color: #444;
+margin-bottom: 10px; /* Space between list items */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+.work-experience {
+padding: 15px;
+}
+
+.section-title {
+font-size: 2rem;
+}
+
+.job-title {
+font-size: 1.5rem;
+}
+
+.company-description,
+.key-activities li {
+font-size: 0.9rem;
+}
+}
+
+/* Education*/
+.education {
+    max-width: 1200px;
+    margin: 50px auto; /* Center section and add space from top */
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Section Title */
+.education .section-title {
+    font-size: 2.5rem;
+    color: #ff9900; /* Bright orange */
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Education Title */
+.education .education-title {
+    font-size: 1.8rem;
+    color: #333; /* Darker text for education titles */
+    margin-bottom: 10px;
+}
+
+/* Education Description */
+.education .education-description {
+    font-size: 1rem;
+    color: #555; /* Slightly muted text */
+    margin-bottom: 20px;
+    line-height: 1.8; /* Improve readability */
+}
+
+/* Key Highlights */
+.education .highlights-title {
+    font-size: 1.2rem;
+    color: #ff9900; /* Highlighted subtitle */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.education .highlights {
+    list-style-type: disc;
+    padding-left: 20px; /* Indent list items */
+    margin-bottom: 30px; /* Add space after each item */
+}
+
+.education .highlights li {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 10px; /* Space between list items */
+}
+
+/* Responsive Design Scoped to Education Section */
+@media (max-width: 768px) {
+    .education {
+        padding: 15px;
+    }
+
+    .education .section-title {
+        font-size: 2rem;
+    }
+
+    .education .education-title {
+        font-size: 1.5rem;
+    }
+
+    .education .education-description,
+    .education .highlights li {
+        font-size: 0.9rem;
+    }
+}
+
+ /* General Section Styling */
+.skills-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.skills-title {
+    font-size: 2.5rem;
+    color: #ff9900;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.skills-category {
+    border: 2px dashed #ff9900;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #fdfbf7;
+}
+
+.skills-category h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.skills-category p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.skills-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skills-icons img {
+    max-width: 70px;
+    height: auto;
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-title {
+        font-size: 2rem;
+    }
+
+    .skills-category h3 {
+        font-size: 1.3rem;
+    }
+
+    .skills-category p {
+        font-size: 0.9rem;
+    }
+
+    .skills-icons img {
+        max-width: 50px;
+    }
+}
+
+
+
+                                                                                                            /* TURNERS CAR PAGE */
+
+
+        /* Intro Section */
+.section {
+    max-width: 1200px;
+    margin: 50px auto; /* Centered section */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    position: relative; /* To enable precise positioning if needed */
+}
+
+.section .text-content {
+    flex: 1;
+}
+
+.section h1 {
+    font-size: 2.5rem;
+    color: #0073cf;
+    margin-bottom: 10px;
+}
+
+.section h2 {
+    font-size: 1.8rem; /* Smaller than h1 but still prominent */
+    color: #555;
+    margin-bottom: 20px;
+    font-weight: 500; /* Lighter font weight */
+}
+
+.section p {
+    font-size: 1.1rem; /* Adjust font size for compact text */
+    color: #555;
+    line-height: 1.4; /* Reduced line spacing */
+    margin-bottom: 10px; /* Add space between paragraphs */
+}
+
+.section img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 30px; /* Add space to move image to the right */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section img {
+        margin-top: 20px;
+        margin-left: 0; /* Reset left margin for mobile */
+    }
+}
+
+/* This is the overview Section */
+.container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+    
+
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    section h2 {
+      font-size: 1.8em;
+      color: #444;
+      margin-bottom: 15px;
+    }
+
+    section p, ul {
+      font-size: 1.1em;
+      color: #555;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 40px;
+    }
+
+    /* Responsive Flexbox for Images */
+    .images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .images img {
+      max-width: 100%;
+      height: auto;
+      padding: 20px;
+    }
+
+
+    /* Design Process Section */
+    .design-process img {
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* Media Queries for Responsiveness */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      section h2 {
+        font-size: 1.5em;
+      }
+
+      section p, ul {
+        font-size: 1em;
+      }
+
+      .images img {
+        width: 90%;
+        max-width: 500px;
+      }
+    }
+
+
+/* UX Research Section */
+
+.container-no-border {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Section Styling */
+.styled-section {
+  margin-bottom: 90px; /* Default space between sections */
+}
+
+.ux-research.styled-section {
+  margin-bottom: 80px; /* Larger space below UX Research section */
+}
+
+/* UX Research Header */
+.ux-research-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.ux-research-text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.ux-research-text h1 {
+  font-size: 3em;
+  color: #d6448f; /* Pink Accent */
+  margin-bottom: 15px;
+}
+
+.ux-research-text p {
+  font-size: 1.2em;
+  color: #333;
+  line-height: 1.6;
+}
+
+.ux-research-image {
+  width: 250px; /* Fixed size for the image container */
+  height: 300px;
+}
+
+.ux-research-image img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Section Titles */
+.styled-section h2 {
+  text-align: center;
+  font-size: 2em;
+  color: #0073cf;
+  margin-bottom: 20px;
+}
+
+/* Image Styling for Sections */
+.styled-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional smooth corners */
+}
+
+/* Insights Section */
+.ux-insights .insight-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px; /* Space between individual insights */
+  padding: 15px;
+}
+
+.ux-insights .insight-image {
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.ux-insights .insight-image img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+ 
+}
+
+.ux-insights .insight-text {
+  flex: 1;
+}
+
+.ux-insights .insight-text h3 {
+  font-size: 1.5em;
+  color: #0073cf; /* Blue Accent */
+  margin-bottom: 10px;
+}
+
+.ux-insights .insight-text p {
+  font-size: 1.1em;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ux-research-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ux-research-text {
+    margin-right: 0;
+  }
+
+  .ux-research-image img {
+    max-width: 150px;
+    margin: 20px auto;
+  }
+
+  .ux-insights .insight-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ux-insights .insight-image {
+    margin: 0 0 15px;
+  }
+
+  .ux-insights .insight-text h3 {
+    font-size: 1.3em;
+  }
+
+  .ux-insights .insight-text p {
+    font-size: 1em;
+  }
+}
+
+/* Define Section Styling */
+
+.define-section.styled-section {
+  margin-bottom: 80px; /* Space below Define section */
+  padding: 20px; /* Add padding for spacing */
+}
+
+/* Header Layout */
+.define-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.define-text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.define-text h1 {
+  font-size: 3em;
+  color: #d6448f; /* Pink Accent */
+  margin-bottom: 15px;
+}
+
+.define-text p {
+  font-size: 1.2em;
+  color: #333;
+  line-height: 1.6;
+}
+
+.define-image {
+  width: 200px; /* Adjusted width for header image */
+  height: 250px; /* Adjusted height */
+  margin: 0 auto;
+}
+
+.define-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image fills container proportionally */
+  border-radius: 8px; /* Smooth corners */
+}
+
+/* Subsection Titles */
+.styled-section h2 {
+  text-align: center;
+  font-size: 2em;
+  color: #0073cf; /* Blue Accent */
+  margin-bottom: 20px;
+}
+
+/* Global Image Styling for Define Section */
+.styled-section img {
+  max-width: 90%; /* Reduce image size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Smooth corners */
+  margin: 20px auto; /* Center images with spacing */
+  display: block; /* Ensure proper centering */
+}
+
+/* Target User Persona Image */
+.user-persona .persona-image img {
+  max-height: 600px; /* Increased maximum height */
+  max-width: 100%; /* Slightly increased width */
+  width: auto; /* Maintain aspect ratio */
+  display: block;
+  margin: 20px auto; /* Center the image */
+  border-radius: 8px; /* Smooth corners */
+}
+
+/* Target Customer Journey Image */
+.customer-journey .journey-image img {
+  width: 100%; /* Fully fit the container */
+  max-height: 680px; /* Slightly increased maximum height */
+  display: block;
+  margin: 20px auto; /* Center the image */
+  border-radius: 8px; /* Smooth corners */
+}
+
+/* Problem Definition */
+.problem-definition p {
+  font-size: 1.2em;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.problem-statement-image img {
+  max-width: 100%; /* Reduce size for problem statement image */
+  margin: 20px auto; /* Center the image */
+  display: block;
+  height: auto;
+  border-radius: 8px; /* Smooth corners */
+}
+
+/* Insights Section */
+.define-insights .insight-item {
+  margin-bottom: 30px; /* Space between insights */
+  padding: 15px; /* Add padding inside the item */
+  background: #fff; /* White background for card effect */
+  border-radius: 8px; /* Rounded corners */
+  border: 2px dashed #0073cf; /* Dashed border with blue accent */
+}
+
+.define-insights .insight-item h3 {
+  font-size: 1.5em;
+  color: #0073cf; /* Blue Accent */
+  margin-bottom: 10px;
+}
+
+.define-insights .insight-item p {
+  font-size: 1.1em;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive Design for Define Section */
+@media (max-width: 768px) {
+  .define-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .define-text {
+    margin-right: 0;
+  }
+
+  .define-image {
+    width: 150px; /* Reduce width for smaller screens */
+    height: 200px; /* Reduce height */
+  }
+
+  .define-image img {
+    max-width: 100%; /* Fit image within container */
+  }
+
+  .problem-statement-image img {
+    max-width: 90%; /* Adjust size for smaller screens */
+    margin: 20px auto;
+  }
+
+  .user-persona .persona-image img {
+    max-height: 350px; /* Slightly reduced height for smaller screens */
+    max-width: 94%; /* Maintain slight increase */
+  }
+
+  .customer-journey .journey-image img {
+    width: 100%; /* Still fully fit container */
+    max-height: 450px; /* Adjust for smaller screens */
+  }
+
+  .define-insights .insight-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .define-insights .insight-item h3 {
+    font-size: 1.3em;
+  }
+
+  .define-insights .insight-item p {
+    font-size: 1em;
+  }
+}
+
+/* Ideate Section Styling */
+
+/* Ideate Section */
+.ideate-section.styled-section {
+    margin-bottom: 60px; /* Space below Ideate section */
+    padding: 20px; /* Consistent padding with Define section */
+    max-width: 1200px; /* Match Define section width */
+    margin: auto; /* Center the container */
+  }
+  
+  /* Ideate Header */
+  .ideate-header h1 {
+    font-size: 3em;
+    color: #d6448f; /* Pink Accent */
+    margin-bottom: 30px;
+  }
+  
+  /* User Stories Section */
+  .user-stories h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #0073cf; /* Blue Accent */
+    margin-bottom: 20px;
+  }
+  
+  .user-stories-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px; /* Increased gap to match Define stage styling */
+    flex-wrap: wrap; /* Adjust layout for smaller screens */
+  }
+  
+  .stories-text {
+    flex: 1;
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6; /* Consistent line-height */
+  }
+  
+  .stories-text p {
+    margin-bottom: 20px; /* Match spacing with Define stage */
+  }
+  
+  .stories-image {
+    flex: 0 0 300px; /* Match Define section image sizing */
+    max-width: 300px;
+  }
+  
+  .stories-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Smooth corners */
+  }
+  
+  /* User Flow Section */
+  .user-flow h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #0073cf; /* Blue Accent */
+    margin-bottom: 20px;
+  }
+  
+  .user-flow-image img {
+    max-width: 90%; /* Match Define section image size */
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Center with spacing */
+    border-radius: 8px; /* Smooth corners */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .user-stories-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .stories-image {
+      margin: 20px auto; /* Center the image */
+    }
+  
+    .user-flow-image img {
+      max-width: 100%; /* Full width for smaller screens */
+      margin: 20px auto;
+    }
+  }
+  
+ /* Design Section Styling */ 
+
+ /* Design Section */
+.design-section.styled-section {
+    margin-bottom: 80px; /* Space below the Design section */
+    padding: 20px;
+  }
+  
+  .design-header h1 {
+    font-size: 3em;
+    text-align: left;
+    margin-left: 80px;
+    color: #d6448f; /* Pink Accent */
+    margin-bottom: 30px;
+  }
+  
+  /* Section Titles */
+  .styled-section h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #0073cf; /* Blue Accent */
+    margin-bottom: 20px;
+  }
+  
+  /* Video Container Styling */
+  .video-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .video-container video {
+    width: 100%; /* Make the video responsive */
+    max-width: 900px; /* Set a maximum width */
+  }
+
+  .reduced-height-video video {
+    height: 850px; /* Set a custom height */
+    width: auto; /* Maintain proportional width */
+    object-fit: contain; /* Ensure proper scaling of content */
+  }
+
+
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .video-container video {
+      width: 100%; /* Make the video take full width on smaller screens */
+    }
+  }
+  
+    /* UI Kit Design */
+
+    /* UI Kit Section */
+.ui-kit-section.styled-section {
+    margin-bottom: 80px; /* Add space below the section */
+    padding: 20px; /* Consistent padding with other sections */
+    max-width: 1200px; /* Match the container width */
+    margin: auto; /* Center the section on the page */
+  }
+  
+  .ui-kit-header h1 {
+    font-size: 3em; /* Large, bold header */
+    text-align: left;
+    color: #d6448f; /* Pink Accent for the header */
+    margin-bottom: 30px; /* Space below the main header */
+  }
+  
+  /* Turners UI Kit Section */
+  .turners-ui-kit.styled-section h2 {
+    text-align: center; /* Center-align the subsection title */
+    font-size: 2em; /* Slightly smaller subtitle */
+    color: #0073cf; /* Blue Accent for subtitles */
+    margin-bottom: 20px; /* Space below the subtitle */
+  }
+  
+  .ui-kit-image {
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Center the image */
+    align-items: center;
+    margin: 20px auto; /* Space around the image */
+  }
+  
+  .ui-kit-image img {
+    max-width: 90%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Smooth corners for a clean look */
+    border: 1px solid #ddd; /* Light border around the image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .ui-kit-header h1 {
+      font-size: 2.5em; /* Adjust header size for smaller screens */
+    }
+  
+    .turners-ui-kit.styled-section h2 {
+      font-size: 1.8em; /* Adjust subtitle size for smaller screens */
+    }
+  
+    .ui-kit-image img {
+      max-width: 100%; /* Allow full width on smaller screens */
+    }
+  }
+  
+  /* Improvement Section */
+
+.improvement-section.styled-section {
+    margin-bottom: 80px; /* Add space below the section */
+    padding: 20px; /* Consistent padding with UI Kit Section */
+    max-width: 1200px; /* Match the container width */
+    margin: auto; /* Center the section */
+  }
+  
+  .improvement-header h1 {
+    font-size: 3em;
+    text-align: left;
+    color: #d6448f; /* Pink Accent */
+    margin-bottom: 30px;
+  }
+  
+  /* Improvement Section */
+.improvement-section.styled-section {
+    margin-bottom: 80px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .improvement-header h1 {
+    font-size: 3em;
+    text-align: left;
+    color: #d6448f; /* Pink Accent */
+    margin-bottom: 30px;
+  }
+  
+  /* Highlights Content */
+  .highlights-content h2,
+  .improvement-content h2,
+  .conclusion-content h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #0073cf; /* Blue Accent */
+    margin-bottom: 20px;
+  }
+  
+  .highlight-text ul,
+  .improvement-text ul {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 20px;
+    list-style-type: disc; /* Standard bullet points */
+    padding-left: 40px; /* Align bullets with text */
+  }
+  
+  .highlight-text ul li,
+  .improvement-text ul li {
+    margin-bottom: 15px;
+  }
+  
+  .highlight-text ul li strong,
+  .improvement-text ul li strong {
+    color: #333; /* Darker text for emphasis */
+  }
+  
+  .conclusion-content p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.8;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  /* Conclusion Section */
+.conclusion-content.styled-section {
+    margin-bottom: 80px; /* Add space below the conclusion section */
+    padding: 20px; /* Consistent padding with other sections */
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .conclusion-header h1 {
+    font-size: 3em;
+    text-align: left;
+    color: #d6448f; /* Pink Accent */
+    margin-bottom: 30px; /* Consistent spacing with other headings */
+  }
+  
+  .conclusion-content p {
+    font-size: 1.2em; /* Match text size with other sections */
+    color: #555;
+    line-height: 1.8;
+    text-align: center; /* Center-align the paragraph for consistency */
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .improvement-header h1 {
+      font-size: 2.5em;
+    }
+  
+    .highlights-content h2,
+    .improvement-content h2,
+    .conclusion-content h2 {
+      font-size: 1.8em;
+    }
+  
+    .highlight-text ul,
+    .improvement-text ul {
+      font-size: 1em;
+    }
+  
+    .conclusion-content p {
+      font-size: 1em;
+      text-align: center;
+    }
+  }
+  
+
+                                        /* Z Energy PAGE */
+
+/* Testing Section Styling */
+.content-header h2 {
+    text-align: left;
+    font-size: 3em;
+    color: #d6448f;
+    margin-bottom: 20px;
+    margin-left: 80px;
+}
+
+.content-body {
+    padding: 80px; /* Added 80px padding to the container */
+
+    border-radius: 8px; /* Optional: Rounded corners for a polished look */
+    margin: 0 auto; /* Center the container horizontally */
+    max-width: 1200px; /* Optional: Limit the container's width */
+}
+
+.content-body h1,
+.content-body h2 {
+    text-align: center;
+    font-size: 1.8em;
+    color: #ff8c00; /* Z Energy Orange */
+    margin-bottom: 20px;
+}
+
+.content-body p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.content-body ul {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 20px;
+    list-style-type: disc; /* Standard bullet points */
+    padding-left: 40px; /* Align bullets with text */
+}
+
+.content-body ul li {
+    margin-bottom: 15px;
+}
+
+.highlight {
+    color: #0073cf; /* Blue Accent for highlights */
+    font-weight: bold;
+}
+
